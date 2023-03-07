@@ -1,0 +1,19 @@
+name: Decide order
+
+on:
+  issues:
+    types:
+      - opened
+      
+jobs:
+  add-comment:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: mojh7/real-mysql-study@main
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            test. **test123** :sparkles: !?#
