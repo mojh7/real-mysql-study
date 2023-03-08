@@ -20,4 +20,5 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            정리 범위 :sparkles: <br> ${{ steps.random-list.outputs.result }}
+            정리 범위 :sparkles:
+            ${{ steps.random-list.outputs.result }}
