@@ -19,5 +19,5 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            ### 정리 범위 🔎
+            ### 정리 범위 무작위 선택 봇 🔎
             ${{ steps.random-list.outputs.result }}
