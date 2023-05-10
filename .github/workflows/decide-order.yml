@@ -4,6 +4,7 @@ on:
   issues:
     types:
       - opened
+      - reopened
       
 jobs:
   add-comment:
@@ -21,4 +22,4 @@ jobs:
           body: |
             ### 정리 범위 무작위 선택 봇 🔎
             ${{ steps.random-list.outputs.result }}
-            reactions: eyes
+          reactions: eyes
